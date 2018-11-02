@@ -56,6 +56,12 @@ message.channel.send(args.join("  "))
   }
 
 });
+client.on('message', message => {
+     if (message.content === "!av-set") {
+client.user.setAvatar(`https://cdn.discordapp.com/avatars/324672376455299074/524312009e5ce435a1adf99080f76e63.jpg`)
+ 
+}
+});
 
 var timer = setTimeout(timerFunc, 1000);
 
