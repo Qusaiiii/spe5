@@ -1,3 +1,6 @@
+var ServerID = "496001281643773993";// اي دي الروم
+var ChannelID = "496314042537738240";
+
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = '!';
@@ -14,10 +17,10 @@ client.on('disconnect', () => console.log('PROBOT credits miner had disconnected
 
 client.on('reconnecting', () => console.log('PROBOT credits miner is reconnecting...'));
 
+
 function timerFunc() {
     client.on('message', msg => {
-      let spam = msg.guild.channels.find('name', 'spam');
-        spam.send(Math.random().toString(36).substring(7))
+        client.guilds.get(ServerID).channels.get(ChannelID).send(Math.random().toString(36).substring(7))
 
 
     });
