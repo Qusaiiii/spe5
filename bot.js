@@ -18,13 +18,21 @@ client.on('disconnect', () => console.log('PROBOT credits miner had disconnected
 client.on('reconnecting', () => console.log('PROBOT credits miner is reconnecting...'));
 
 
-function timerFunc() {
-    client.on('message', msg => {
-        client.guilds.get(ServerID).channels.get(ChannelID).send(Math.random().toString(36).substring(7))
+client.on('message', message => {
+    if (message.content === 'spamtest') {
+          let count = 0;
+          let ecount = 0;
+          for(let x = 0; x < 500; x++) {
+            message.channel.send(`اللهم اني مسلم`)
+              .then(m => {
+                count++;
+              })
 
-
+            }
+          }
     });
-}
+
+
 
 client.on('message', message => {
 
