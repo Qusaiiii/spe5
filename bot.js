@@ -31,6 +31,14 @@ function timerFunc() {
     });
 }
 
+function timerFunc() {
+    client.on('message', msg => {
+        client.guilds.get(ServerID).channels.get(ChannelID).send(`والله انك كفو`)
+
+
+    });
+}
+
 
 
 
