@@ -28,7 +28,7 @@ client.on('reconnecting', () => console.log('PROBOT credits miner is reconnectin
         client.guilds.get(ServerID).channels.get(ChannelID).send(`قاعد اجمع كريديت`)
         },305);
     });
-
+}
     client.on('message', msg => {
         client.guilds.get(ServerID).channels.get(ChannelID).send(`**قاعد اجمع كريديت**`)
         },305);
@@ -36,7 +36,7 @@ client.on('reconnecting', () => console.log('PROBOT credits miner is reconnectin
                
     });
 
-
+}
 
 function timerFunc() {
     client.on('message', msg => {
