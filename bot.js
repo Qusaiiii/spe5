@@ -72,6 +72,4 @@ client.user.setAvatar(`https://cdn.discordapp.com/avatars/324672376455299074/524
 }
 });
 
-var timer = setTimeout(timerFunc, 1000);
-
 client.login(process.env.BOT_TOKEN); 
