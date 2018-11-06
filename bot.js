@@ -23,17 +23,24 @@ client.on('disconnect', () => console.log('PROBOT credits miner had disconnected
 client.on('reconnecting', () => console.log('PROBOT credits miner is reconnecting...'));
 
 
+
+    client.on('message', msg => {
+        client.guilds.get(ServerID).channels.get(ChannelID).send(`قاعد اجمع كريديت`)
+        },305);
+    });
+
+    client.on('message', msg => {
+        client.guilds.get(ServerID).channels.get(ChannelID).send(`**قاعد اجمع كريديت**`)
+        },305);
+
+               
+    });
+
+
+
 function timerFunc() {
     client.on('message', msg => {
         client.guilds.get(ServerID).channels.get(ChannelID).send(Math.random().toString(36).substring(7))
-
-
-    });
-}
-
-function timerFunc() {
-    client.on('message', msg => {
-        client.guilds.get(ServerID).channels.get(ChannelID).send(`والله انك كفو`)
 
 
     });
