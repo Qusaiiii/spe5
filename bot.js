@@ -13,7 +13,7 @@ client.on('ready', async() => {
 var server = "496001281643773993"; // ايدي السررفر
 var channel = "509351904212418580";//ايدي الروم
     setInterval(()=>{
-    hero.guilds.get(server).channels.get(channel).send(`**ItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsme**`);
+    client.guilds.get(server).channels.get(channel).send(`**ItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsme**`);
     },305);
 })
 
