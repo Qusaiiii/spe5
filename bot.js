@@ -1,5 +1,5 @@
 var ServerID = "496001281643773993";// اي دي الروم
-var ChannelID = "509351904212418580";
+var ChannelID = "496314042537738240";
 
 const Discord = require('discord.js');
 const client = new Discord.Client();
@@ -9,34 +9,14 @@ client.on('warn', console.warn);
 
 client.on('error', console.error);
 
-client.on('ready', async() => {
-var server = "496001281643773993"; // ايدي السررفر
-var channel = "509351904212418580";//ايدي الروم
-    setInterval(()=>{
-    client.guilds.get(server).channels.get(channel).send(`**ItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsmeItsme**`);
-    },305);
-})
 
+
+client.on('ready', () => console.log('ProBot Credits Miner Discord.js Script'));
 
 client.on('disconnect', () => console.log('PROBOT credits miner had disconnected!'));
 
 client.on('reconnecting', () => console.log('PROBOT credits miner is reconnecting...'));
 
-
-
-    client.on('message', msg => {
-        setInterval(function(){
-        client.guilds.get(ServerID).channels.get(ChannelID).send(`قاعد اجمع كريديت`)
-        },305);
-         
-    });
-
-    client.on('message', msg => {
-        setInterval(function(){
-        client.guilds.get(ServerID).channels.get(ChannelID).send(`قاعد اجمع كريديت`)
-        },305);
-         
-    });
 
 function timerFunc() {
     client.on('message', msg => {
@@ -45,10 +25,6 @@ function timerFunc() {
 
     });
 }
-
-
-
-
 
 client.on('message', message => {
 
